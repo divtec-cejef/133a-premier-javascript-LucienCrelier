@@ -31,3 +31,17 @@ btAjouter.addEventListener('click', () => {
     inputArticle.value = '';
 } );
 
+// Demander l'âge du visiteur
+let ageVisiteur = prompt('Quel âge as-tu ?');
+
+// Transformer l'âge du visiteur en entier
+ageVisiteur = parseInt(ageVisiteur);
+console.log();
+
+// Tester si c'est un nombre
+if (isNaN(ageVisiteur)) {
+    alert('Erreur, entre un nombre !');
+} else {
+    // affiche l'âge du visiteur
+    alert(`Tu as ${ageVisiteur} ans`);
+}
